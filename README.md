@@ -113,3 +113,6 @@ hello,liyiqiang
 
 [spring源码仓库链接](https://repo.spring.io/release/org/springframework/spring/)
 
+[Spring AOP的实现原理及应用场景（通过动态代理）](https://blog.csdn.net/u010452388/article/details/80868392)
+
+[在Eclipse中关联源代码](https://blog.csdn.net/longyuhome/article/details/8497505)
