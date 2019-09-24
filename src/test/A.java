@@ -2,6 +2,10 @@ package test;
 
 public class A {
 
+	public A() {
+		System.out.println("调用A的空构造方法");
+	}
+	
 	private B b3 = new B();//class A 依赖 class B 依赖的属性一定要实例化
 //	B b3;//class A 依赖 class B
 	private C c3;
