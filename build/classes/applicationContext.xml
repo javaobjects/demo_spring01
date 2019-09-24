@@ -14,5 +14,5 @@
 	</bean>
 	<bean id="c" class="test.C">
 	</bean>
-	
+	<bean id="b" class="test.B"></bean>
 </beans>
