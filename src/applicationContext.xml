@@ -17,15 +17,25 @@
 	</bean>
 	<bean id="b" class="test.B"></bean> -->
 	
-	<bean id="productService" class="service.ProductService" scope="singleton">
+<!-- 	<bean id="productService" class="service.ProductService" scope="singleton">
 		<property name="productDao" ref="productDao"></property>
-	</bean>
-	<bean id="productDao" class="dao.ProductDao"></bean>
+	</bean> -->
 	
+	
+<!-- 	<bean id="productDao" class="dao.ProductDao"></bean>
 	
 	<bean id="productService2" class="service.ProductService" init-method="chushihua" destroy-method="destory" lazy-init="default">
 		<property name="productDao" ref="productDao"></property>
-	</bean>
+	</bean> -->
 	
 
+	<!-- <bean id="person" class="domain.Person"></bean> -->
+	
+	<!-- 使用工厂静态方法初始始化一个bean -->
+	<!-- <bean id="peson" class="factory.EntityBeanFactory" factory-method="getPerson"></bean> -->
+	
+	<!-- 实例工作方法实例化 -->
+	<bean id="factoryBean" class="factory.EntityBeanFactory"></bean>
+	<bean id="person" factory-bean="factoryBean" factory-method="getPerson"></bean>
+	
 </beans>
