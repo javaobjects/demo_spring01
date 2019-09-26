@@ -8,7 +8,7 @@
            http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd"
-           default-lazy-init="true">
+           default-lazy-init="false">
 
 	<bean id="a" class="test.A">
 		<property name="c3" ref="c"></property>
@@ -16,4 +16,8 @@
 	<bean id="c" class="test.C">
 	</bean>
 	<bean id="b" class="test.B"></bean>
+	<bean id="productService" class="service.ProductService" init-method="chushihua" destroy-method="destory" lazy-init="default">
+		<property name="productDao" ref="productDao"></property>
+	</bean>
+	<bean id="productDao" class="dao.ProductDao"></bean>
 </beans>
