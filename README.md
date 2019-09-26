@@ -116,3 +116,5 @@ hello,liyiqiang
 [Spring AOP的实现原理及应用场景（通过动态代理）](https://blog.csdn.net/u010452388/article/details/80868392)
 
 [在Eclipse中关联源代码](https://blog.csdn.net/longyuhome/article/details/8497505)
+
+[commons-lang3工具类学习（三）](https://blog.csdn.net/u012240455/article/details/79014224)
