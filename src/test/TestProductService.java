@@ -2,7 +2,6 @@ package test;
 
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
-import domain.Product;
 import service.ProductService;
 
 public class TestProductService {
@@ -11,10 +10,16 @@ public class TestProductService {
 		FileSystemXmlApplicationContext act = new FileSystemXmlApplicationContext(
 				new String[]{"classpath:applicationContext.xml"});
 		
-		ProductService service = (ProductService)act.getBean("productService");
+		ProductService service1 = (ProductService)act.getBean("productService");
+		ProductService service2 = (ProductService)act.getBean("productService");
+		ProductService service3 = (ProductService)act.getBean("productService");
 		
-		service.ruku(new Product());
+		System.out.println(service1);
+		System.out.println(service2);
+		System.out.println(service3);
 		
-		service.destory();
+//		service.ruku(new Product());
+		
+//		service.destory();
 	}
 }

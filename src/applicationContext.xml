@@ -10,14 +10,22 @@
            http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd"
            default-lazy-init="false">
 
-	<bean id="a" class="test.A">
+<!-- 	<bean id="a" class="test.A">
 		<property name="c3" ref="c"></property>
 	</bean>
 	<bean id="c" class="test.C">
 	</bean>
-	<bean id="b" class="test.B"></bean>
-	<bean id="productService" class="service.ProductService" init-method="chushihua" destroy-method="destory" lazy-init="default">
+	<bean id="b" class="test.B"></bean> -->
+	
+	<bean id="productService" class="service.ProductService" scope="singleton">
 		<property name="productDao" ref="productDao"></property>
 	</bean>
 	<bean id="productDao" class="dao.ProductDao"></bean>
+	
+	
+	<bean id="productService2" class="service.ProductService" init-method="chushihua" destroy-method="destory" lazy-init="default">
+		<property name="productDao" ref="productDao"></property>
+	</bean>
+	
+
 </beans>
