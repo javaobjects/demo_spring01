@@ -11,7 +11,8 @@
            default-lazy-init="true"
            >
 
-	<bean id="c" class="test.C">
+	<bean id="c" class="test.C" name="cc1">
 	</bean>
+	<bean ic="c" class="test.C" name="cc2"></bean>
 	<!-- <bean id="b" class="test.B"></bean> -->
 </beans>
